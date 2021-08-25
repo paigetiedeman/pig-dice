@@ -25,7 +25,7 @@ Pig Dice is a game where players take turn rolling a dice. Each number is added 
 
 ## Known Bugs
 
-* _N/A_
+* _game is only setup for two players_
 
 ## License
 
@@ -62,6 +62,5 @@ Expected Output: "You are a winner"
 Test: "A player can end their turn"  
 Code: score.endTurn();  
 Expected Output: Scores {playerOneTotal: 9, playerTwoTotal: 0, tempScore: 0, playerOne: false, playerTwo: true}  
-
 
 

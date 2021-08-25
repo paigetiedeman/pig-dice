@@ -12,6 +12,30 @@
 <body>
   <div id="container">
     <h1>Pig Dice</h1>
-  </div>
+    <p>Players take turns rolling a die and the first to 100 points wins!</p>
+    <div class="row">
+      <div class="col-md">
+        <div id="playerOne">
+          <h4>Player One:</h4>
+          <p><span class="playerOneTotal"></span></p>
+        </div>
+      </div>
+      <div class="col-md">
+        <p><span class="currentScore"></span></p>
+      </div>
+      <div class="col-md">
+        <div id="playerTwo">
+          <h4>Player Two:</h4>
+          <p><span class="playerTwoTotal"></span></p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div id="buttons">
+      <button type="btn" class="btn btn-success btn-lg btn-block" id="roll">Roll!</button>
+      <button type="btn" class="btn btn-danger btn-lg btn-block" id="hold">Hold!</button>
+    </div>
+    </div>
 </body>
+
 </html>

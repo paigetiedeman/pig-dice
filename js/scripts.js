@@ -28,24 +28,39 @@ Scores.prototype.endTurn = function () {
     this.playerOneTotal += this.tempScore;
   } else {
     this.playerTwoTotal += this.tempScore;
-  }
+  } 
   this.tempScore = 0;
+  this.winnerCheck();
   this.playerOne = !this.playerOne;
   this.playerTwo = !this.playerTwo;
 };
 
 Scores.prototype.winnerCheck = function() {
   if (this.playerOneTotal >= 100) {
-    alert("You are the winner");
+    return "You are the winner";
   } else if (this.playerTwoTotal >= 100) {
-    alert("Player 2 is the winner!");
+    return "Player 2 is the winner!";
   }
-}
+};
 
 
-let score = new Scores();
-console.log(score.roll());
-console.log(score.roll());
-console.log(score.playerOneTotal);
+// console.log(score.winnerCheck());
+// console.log(score);
 
 // UI Logic
+
+let score = new Scores();
+
+$(document).ready(function () {
+  $("#roll").click(function () {
+    score.roll();
+    $(".currentScore").text(score.tempScore);
+    //$(".playerTwoTotal").text(0);
+  });
+  $("#hold").click(function () {
+    score.endTurn();
+    // $(".currentScore").hide();
+    $(".playerOneTotal").text(score.playerOneTotal);
+    $(".playerTwoTotal").text(score.playerTwoTotal);
+  });
+});
