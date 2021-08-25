@@ -4,34 +4,48 @@
 // player can "hold" and turn is added to their score 
 // first player to 100 points wins
 
-let playerOne = {
-  totalPoints: 0,
-  tempPoints: 0
+function Scores() {
+  this.playerOneTotal = 0;
+  this.playerTwoTotal = 0;
+  this.tempScore = 0;
+  this.playerOne = true;
+  this.playerTwo = false;
 }
 
-let playerTwo = {
-  totalPoints: 0,
-  tempPoints: 0
-}
+Scores.prototype.roll = function () {
+  var rollDice = Math.floor(Math.random() * 6 + 1);
 
-function rollDice() {
-
-  var rollDice = Math.floor(Math.random() *6 + 1);
-
-  if ( rollDice != 1 ) {
-    playerOne.tempPoints += rollDice;
-  }else {
-    playerOne.tempPoints = 0;
+  if (rollDice != 1) {
+    this.tempScore += rollDice;
+  } else {
+    this.tempScore = 0;
+    this.endTurn();
   }
-  playerOne.totalPoints += playerOne.tempPoints;
-  playerOne.tempPoints = 0;
-}
+};
 
-rollDice(playerOne);
+Scores.prototype.endTurn = function () {
+  if (this.playerOne) {
+    this.playerOneTotal += this.tempScore;
+  } else {
+    this.playerTwoTotal += this.tempScore;
+  }
+  this.tempScore = 0;
+  this.playerOne = !this.playerOne;
+  this.playerTwo = !this.playerTwo;
+};
 
-function winnerCheck() {
-  if (playerOne.totalPoints === 100) {
+Scores.prototype.winnerCheck = function() {
+  if (this.playerOneTotal >= 100) {
     alert("You are the winner");
+  } else if (this.playerTwoTotal >= 100) {
+    alert("Player 2 is the winner!");
   }
 }
 
+
+let score = new Scores();
+console.log(score.roll());
+console.log(score.roll());
+console.log(score.playerOneTotal);
+
+// UI Logic
