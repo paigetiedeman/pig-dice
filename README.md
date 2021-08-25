@@ -37,7 +37,7 @@ Copyright (c) 2021 Paige Tiedeman, Diego Serafico and Roman Kolivashko.
 ## Contact Information
 
 _Paige Tiedeman **paigetiedeman@gmail.com**_  
-_Diego Serafico **serafico@gmail.com**_  
+_Diego Serafico **dseraficohernandez@gmail.com**_  
 _Roman Kolivashko **rkolivashko@gmail.com**_
 
 ### Tests

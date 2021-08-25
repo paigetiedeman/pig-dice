@@ -64,7 +64,7 @@ $(document).ready(function () {
   });
   $("#hold").click(function () {
     score.endTurn();
-    $(".currentScore").val("");
+    $(".currentScore").text("0");
     $(".playerOneTotal").text(score.playerOneTotal);
     $(".playerTwoTotal").text(score.playerTwoTotal);
   });
