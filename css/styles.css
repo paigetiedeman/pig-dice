@@ -1,7 +1,22 @@
-.currentScore, .playerOneTotal, .playerTwoTotal {
-  font-size: 50px;
+.playerOneTotal, .playerTwoTotal {
+  font-size: 40px;
 }
 
 #container {
   margin: 20px;
+}
+
+.currentScore {
+  color: #D62828;
+  font-size: 60px;
+
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: #d628283a;
+}
+
+h4, p {
+  text-align: center;
 }
