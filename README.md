@@ -1,8 +1,8 @@
-# Project Name
+# Pig Dice
 
 #### This is an object oriented Pig Dice game.
 
-#### _By Paige Tiedeman, Roman Kolivashko & Diego Serafico
+#### _By Paige Tiedeman, Roman Kolivashko & Diego Serafico_
 
 ## Technologies Used
 
@@ -21,7 +21,8 @@ Pig Dice is a game where players take turn rolling a dice. Each number is added 
 * _Clone this repository to your desktop_
 * _Go to the top level of this directory_
 * _Open index.html in your browser_
-* _Click on the die_
+* _Click on the roll button until you decide to hold_
+* _Then click the hold button to add your score to the side total_
 
 ## Known Bugs
 
@@ -36,7 +37,7 @@ Copyright (c) 2021 Paige Tiedeman, Diego Serafico and Roman Kolivashko.
 ## Contact Information
 
 _Paige Tiedeman **paigetiedeman@gmail.com**_  
-_Diego Serafico **serafico@gmail.com**_
+_Diego Serafico **serafico@gmail.com**_  
 _Roman Kolivashko **rkolivashko@gmail.com**_
 
 ### Tests

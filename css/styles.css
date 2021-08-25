@@ -1,4 +1,5 @@
-.playerOneTotal, .playerTwoTotal {
+.playerOneTotal,
+.playerTwoTotal {
   font-size: 40px;
 }
 
@@ -7,9 +8,8 @@
 }
 
 .currentScore {
-  color: #D62828;
+  color: #d62828;
   font-size: 60px;
-
 }
 
 .jumbotron {
@@ -17,6 +17,7 @@
   background-color: #d628283a;
 }
 
-h4, p {
+h4,
+p {
   text-align: center;
 }

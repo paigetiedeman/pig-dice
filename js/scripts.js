@@ -28,14 +28,14 @@ Scores.prototype.endTurn = function () {
     this.playerOneTotal += this.tempScore;
   } else {
     this.playerTwoTotal += this.tempScore;
-  } 
+  }
   this.tempScore = 0;
   this.winnerCheck();
   this.playerOne = !this.playerOne;
   this.playerTwo = !this.playerTwo;
 };
 
-Scores.prototype.winnerCheck = function() {
+Scores.prototype.winnerCheck = function () {
   if (this.playerOneTotal >= 100) {
     alert("Player 1 is the winner");
     this.endGame();
@@ -45,14 +45,13 @@ Scores.prototype.winnerCheck = function() {
   }
 };
 
-Scores.prototype.endGame = function() {
+Scores.prototype.endGame = function () {
   this.playerOneTotal = 0;
   this.playerTwoTotal = 0;
   this.tempScore = 0;
   this.playerOne = true;
   this.playerTwo = false;
-}
-
+};
 
 // UI Logic
 
@@ -65,6 +64,7 @@ $(document).ready(function () {
   });
   $("#hold").click(function () {
     score.endTurn();
+    $(".currentScore").val("");
     $(".playerOneTotal").text(score.playerOneTotal);
     $(".playerTwoTotal").text(score.playerTwoTotal);
   });
