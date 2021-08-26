@@ -52,11 +52,11 @@ Scores.prototype.winnerCheck = function () {
   if (this.playerOneTotal >= 10) {
     this.endGame();
     alert("Player 1 is the winner");
-    $(".winner-img1").show();
+    $(".winner-img1").show().delay(5000).fadeOut();
   } else if (this.playerTwoTotal >= 10) {
     this.endGame();
     alert("Player 2 is the winner!");
-    $(".winner-img2").show();
+    $(".winner-img2").show().delay(5000).fadeOut();
   }
 };
 
@@ -76,8 +76,6 @@ Scores.prototype.endGame = function () {
 let score = new Scores();
 
 $(document).ready(function () {
-  $(".winner-img1").hide();
-  $(".winner-img2").hide();
   $(".currentScore").text(score.tempScore);
   $(".playerOneTotal").text(score.playerOneTotal);
   $(".playerTwoTotal").text(score.playerTwoTotal);
