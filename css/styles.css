@@ -8,16 +8,61 @@
 }
 
 .currentScore {
-  color: #d62828;
-  font-size: 60px;
+color: #d62828;
+font-size: 60px;
+text-align: center;
+}
+
+.centered-img { 
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+  display: block;
 }
 
 .jumbotron {
   text-align: center;
-  background-color: #d628283a;
+  background-color: #d628286e;
+}
+
+.jumbotron p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  font-family: 'Rampart One', cursive;
+  font-size: 65px;
+  color: rgb(0, 0, 0);
 }
 
 h4,
 p {
   text-align: center;
 }
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+button {
+  font-family: 'Raleway', sans-serif;
+}
+
+.winner-img1 {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('../img/winner-1.png');
+}
+
+
+.winner-img2 {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url('../img/winner-2.png');
+}
+

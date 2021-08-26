@@ -6,6 +6,10 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Rampart+One&display=swap" rel="stylesheet">
   <title>Pig Dice</title>
 </head>
 
@@ -23,7 +27,9 @@
         </div>
       </div>
       <div class="col-md">
+        <h4>Current Roll Score:</h4>
         <p><span class="currentScore"></span></p>
+        <img src="img/1.jpg" name="myDice" class="centered-img">
       </div>
       <div class="col-md">
         <div id="playerTwo">
@@ -34,8 +40,12 @@
     </div>
     <br>
     <div id="buttons">
-      <button type="btn" class="btn btn-success btn-lg btn-block" id="roll">Roll!</button>
+      <button type="btn" class="btn btn-success btn-lg btn-block" id="roll">Roll!</button>!</button>
       <button type="btn" class="btn btn-danger btn-lg btn-block" id="hold">Hold!</button>
+    </div>
+    <div><span class="winner-img1"><img src='../img/winner-1.png' alt="winner 1" width="500" height="320"></span>
+    </div>
+    <div><span class="winner-img2"><img src='../img/winner-2.png' alt="winner 1" width="500" height="320"></span>
     </div>
   </div>
 </body>
